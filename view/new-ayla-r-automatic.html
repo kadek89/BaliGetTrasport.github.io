@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Belajar HTML - Membuat Form</title></head>
+<body> 
+
+<form action="prosessForm.php" method="GET">
+<!-- letakkan field di sini -->
+<fieldset>
+    <div class="col-1">
+<legend><h1>AVANZA MATIC</h1></legend>
+<table>
+    <tr>
+        <td>Nama</td>
+        <td>:</td>
+        <td><input type="name" name="nama"  required/><br /></td>
+    </tr>       
+
+    <tr>
+        <td>Tempat/Tanggal Pengiriman Sewa</td>
+        <td>:</td>
+        <td><input type="name" name="tempatLahir"/> <input type="date" name="tanggal" /></td>
+    </tr>
+
+    <tr>
+        <td>Tempat/Tanggal Kembali Sewa</td>
+        <td>:</td>
+        <td><input type="name" name="tempatLahir"/> <input type="date" name="tanggal" /></td>
+    </tr>
+
+    <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td><textarea name="komentar" rows="4" cols="50" ></textarea> </td>
+    </tr>
+
+    <tr>
+        <td>No Telp/Hp</td>
+        <td>:</td>
+        <td><input type="number" name="number" /></td>
+    </tr>
+    
+    <tr>
+        <td>Foto KTP dan SIM</td>
+        <td>:</td>
+        <td><input type="file" name="foto" /></td>
+    </tr>
+
+    <tr>
+        <td><input type="submit" name="submit" value="SUBMIT"/></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+</fieldset>
+
+</form>
+
+<script>
+    function sendwhatsapp(){
+     var phonenumber = "+6281933301033";
+
+     var Ayla = document.querySelector(".Ayla").value;
+     var kirim = document.querySelector(".kirim").value;
+     var kembali = document.querySelector(".kembali").value;
+     var message = document.querySelector(".message").value;
+
+     var url = "https://wa.me/+6281933301033?text="
+     var url = "https://wa.me/" + phonenumber + "?text="
+     +"*Ayla :* "+Ayla+"%0a"
+     +"*kirim :* "+kirim+"%0a"
+     +"*kembali:* "+kembali+"%0a"
+     +"*Message :* "+message
+     +"%0a%0a";
+     
+     window.open(url, '_blank').focus();
+   }
+  </script>
+
+</body>
+</html>

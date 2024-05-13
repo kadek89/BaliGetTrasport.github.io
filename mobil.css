@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background:rgb(255, 255, 255);
+}
+.article img{
+    padding-right: -40px;
+    padding-left: -50px;
+    display: block;
+    align-items: center;     
+}
+.article{
+    text-align: center;
+}
+
+.navbar{
+    padding:center;
+    background: #ffffff;
+    align-items: center;    
+    display: flex;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 14px;
+ }
+ nav ul li a:hover{
+    color: red;
+}
+.col-1{
+    flex-basis: 90%;
+    position: relative;
+    margin-left: center;
+}
+
+.socisl-links img{
+    height:50px;
+    margin: 10px;
+    cursor: pointer;
+}
+.socisl-links{
+  text-align: center;
+}    
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.konten p{
+    text-align: center;
+}
+
+
+.grid > article {
+    box-shadow: 0px 0px 5px 0px rgb(3, 3, 3);
+    border-radius: 10px;
+    text-align: center;
+    background: #ffffff;
+    transition: transform; 
+}
+
+.grid > article img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/*.grid > article:hover {
+     transform: translate(15px);*/
+   /*transform: translate(50px);*/
+    /*transform: scale(0.5);
+    transform: scale(1.2);
+}*/
+
+@media (max-width:1000px){
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:500px){
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.diskon {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: red;
+}
+
+.price {
+    font-size: 16px;
+    padding: 5px 6px;
+}
+
+
+.btn {
+    
+    padding: 5px 6px;
+    background: #1743e3;
+    border: 1px solid #1743e3;
+    border-radius: 3px;    
+    font-size: 15px;
+    color: #eaeaea;    
+    text-decoration: none;
+    font-weight: 100;    
+}
+
+.btn:hover {
+    background: transparent;
+    color: #1743e3;
+}
+
+/*/ kata kata di bagian bawah /*/
+
+.warna{    
+    padding: 15px 5px 20px 15px;
+    padding:center;
+    background: #0059ff;
+    align-items: center;    
+        
+}
+
+.warna{
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+  
+
+
+
+

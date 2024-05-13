@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+   text-decoration: none;
+   color: #000;
+   font-size: 14px;
+}
+nav ul li a:hover{
+    color: red;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 54px;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;    
+}
+.col-1 p{
+    font-size: 16px;
+    color: #ff0000;
+    font-weight: 100;
+}
+.col-1 h4{
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.col-2{
+    position: relative;
+    right: 0px;
+    left: 55px;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .controller{
+    width: 90%;
+}
+
+.col-3 h2{    
+    margin: 30px 50px;
+    font-size: 30px;
+}
+
+.col-3 h3{
+    margin: 30px 50px;
+    font-size: 30px;
+}
+
+.col-3 .img{
+    margin: 30px 50px;
+    font-size: 30px;
+    top: -36%; /* Jarak dari atas */
+}
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 20%;
+        border-radius: 0px 0 0 0px;
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        z-index: 7;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #010101;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .controller{
+        width: 77%;
+    }
+    .color-box{
+        transform: translateX(75px);
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 35px;
+    }
+    .col-1 h3{
+        font-size: 15px;
+    }
+}
+.col-3 img{
+    margin: -80px;
+    padding: 80px;
+}
+
+.col-3 h3{
+    font-size: 30px;
+    color: #ff0000;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    align-items: center;
+}
+.col-3 p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.col-12 .container2{
+    height: 19px;
+      margin: 10px;
+      position: relative; /* atau absolute, fixed, atau sticky */
+      right: center; /* Jarak dari kanan */
+      top: 45px; /* Jarak dari kanan */
+        
+        
+}
+
+
+
+.col-11{
+    padding:center;
+    background: #fffdfd;
+    align-items: center;    
+    display: flex;
+    color: rgb(0, 0, 0);     
+}
+
+
+.socisl-links img{
+      height: 19px;
+      margin: 10px;
+      position: relative; /* atau absolute, fixed, atau sticky */
+      right: 40px; /* Jarak dari kanan */
+      top: 55px; /* Jarak dari kanan */
+      
+}
+
+.col-10 img{    
+    position: relative; /* atau absolute, fixed, atau sticky */
+    right: -50px; /* Jarak dari kanan */
+    top: -60px; /* Jarak dari kanan */
+    height: 50px;
+    width: 70px;         
+}
+
+.col-10 p{    
+    position: relative; /* atau absolute, fixed, atau sticky */
+    right: center; /* Jarak dari kanan */
+    top: -20px; /* Jarak dari kanan */
+        
+}
+
+.col-12 h3{    
+    position: relative; /* atau absolute, fixed, atau sticky */
+    right: center; /* Jarak dari kanan */
+    top: -40px; /* Jarak dari kanan */
+        
+}
+
+.col-12 img{    
+    position: relative; /* atau absolute, fixed, atau sticky */
+    right: center; /* Jarak dari kanan */
+    top: 120px; /* Jarak dari kanan */
+        
+}
+/* kode ukuran hp */
+@media only screen and (max-width:400px){
+    .col-10{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }    
+    .col-10 p{
+        font-size: 15px;
+    }
+    .col-10 img{    
+        position: relative; /* atau absolute, fixed, atau sticky */
+        right: -115px; /* Jarak dari kanan */
+        top: -65px; /* Jarak dari kanan */
+            
+    }
+    .col-12 img{    
+        position: relative; /* atau absolute, fixed, atau sticky */
+        right: 90px; /* Jarak dari kanan */
+        top: 85px; /* Jarak dari kanan */
+            
+    }
+    .col-11 h6{
+        position: relative; /* atau absolute, fixed, atau sticky */
+        right: -35px; /* Jarak dari kanan */
+        top: 0px; /* Jarak dari kanan */
+    }
+}
+
+
+
+
+
+
+@media (max-width:1000px){
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:500px){
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

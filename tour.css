@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background:white;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+    padding: 0px 15px 0px;    
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 14px;
+}
+nav ul li a:hover{
+    color: red;
+}
+
+.navbar{
+    padding:center;
+    height: 60px;
+    width: none;
+    background: #ff581b;
+    align-items: center;
+    display: flex;
+}
+
+.navbar p{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 30px;
+    font-size: 17px;
+}
+
+    
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 80px;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.grid > article {
+    box-shadow: 0px 0px 5px 0px rgb(3, 3, 3);
+    border-radius: 20px;
+    text-align: center;
+    background: #ffffff;
+    margin-top: center;
+    transition: transform;    
+}
+
+.grid > article img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/*.grid > article:hover {
+     transform: translate(15px);*/
+   /*transform: translate(50px);*/
+    /*transform: scale(0.5);
+    transform: scale(1.2);
+}*/
+
+@media (max-width:1000px){
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:500px){
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.diskon {
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.price {
+    font-size: 16px;
+    padding: 5px 6px;
+}
+
+
+.btn {
+    
+    padding: 5px 100px;
+    background: #1743e3;
+    border: 1px solid #1743e3;
+    border-radius: 3px;    
+    font-size: 8px;
+    color: #eaeaea;    
+    text-decoration: none;
+    font-weight: 100;    
+}
+
+.btn:hover {
+    background: transparent;
+    color: #1743e3;
+}
+
+
+
+  
+
+
+
+
